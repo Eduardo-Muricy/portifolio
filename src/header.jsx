@@ -5,9 +5,9 @@ function Header() {
      
     return (
        
-        <header >
+        <header className='bg-[#121212] border-b-1 border-[#D4AF37]' >
              {/* */}
-            <nav className="bg-black flex justify-center md:items-center md:justify-around md:gap-310 ">
+            <nav className=" flex justify-center md:items-center md:justify-around md:gap-310 ">
                 <div>
                     <img data-aos="fade-right" src={Logo2} className=' hidden md:block w-18 '  alt="" />
                 
