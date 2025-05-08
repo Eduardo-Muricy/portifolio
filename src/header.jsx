@@ -1,5 +1,4 @@
 
-import Logo from './assets/logo.png'
 import Logo2 from './assets/logo2.png'
 function Header() {
      
