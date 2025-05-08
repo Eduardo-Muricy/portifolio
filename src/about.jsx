@@ -21,7 +21,7 @@ function About() {
                         Crio sites para negócios, sites para empresas e  projetos pessoais. Da uma olhada em meus projetos abaixo! Se quiser criar o seu, entra em contato comigo pelo Whatsapp.
                     </p>
                 </div>
-                <button className="hover:bg-green-600 hover:border-none border-1 mt-10  mb-5 w-70  border-[#D4AF37] flex justify-center text-md duration-300 text-[#E0E0E0]  items-center cursor-pointer h-13 rounded-xl "><WhatsappLogo className="text-xl mr-1 "/> Entrar em contato</button>
+                <button className="hover:bg-green-600 hover:border-none border-1 mt-10  mb-5 w-70  border-[#D4AF37] flex justify-center text-md duration-300 text-[#E0E0E0]  items-center cursor-pointer h-13 rounded-xl "><WhatsappLogo className="text-xl mr-1 "/> <a  target='_blank' href={`https://wa.me/5587988561908?text=Oi, vim pelo seu portifólio e gostaria de saber mais sobre o seu trabalho`}>Entrar em contato</a> </button>
             </div>
         </div>
     )
