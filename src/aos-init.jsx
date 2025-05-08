@@ -6,7 +6,7 @@ function AosInit() {
 
     useEffect(() => {
         Aos.init(   {
-            duration: 800,
+            duration: 1100,
             
             once: true,
            
