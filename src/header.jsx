@@ -8,7 +8,7 @@ function Header() {
              {/* */}
             <nav className=" flex justify-center md:items-center md:justify-around md:gap-310 ">
                 <div>
-                    <img data-aos="fade-right" src={Logo2} className=' hidden md:block w-18 '  alt="" />
+                    <img data-aos="fade-right" src={Logo2} className=' hidden md:block h-7'   alt="" />
                 
                 </div>
                 

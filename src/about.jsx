@@ -6,7 +6,7 @@ function About() {
         <div className="flex flex-col md:flex-row md:px-50 md:justify-center md:gap-20 bg-[#121212]">
             {/* " */}
             <div className="flex justify-center items-center pt-5 flex-col">
-                <img data-aos="fade-down"  src={Photo} id="about" className="rounded-full  md:w-100 border-[#D4AF37] border-2  " />
+                <img data-aos="fade-down"  src={Photo} id="about" className="rounded-full w-70 md:w-100 border-[#D4AF37] border-2" />
                 <div>
                     <h1 className="text-4xl font-bold text-center pt-4 text-[#E0E0E0]">Eduardo Muricy</h1>
                 <h6 className="text-center text-xl font-semibold text-[#E0E0E0]"> Desenvolvedor Frontend </h6>
