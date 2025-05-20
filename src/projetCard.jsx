@@ -5,6 +5,7 @@ import Todo from './assets/capturas/todo-list-captura.png'
 import Conversor from './assets/capturas/conversor-de-moedas.png'
 import Jokenpo from './assets/capturas/jokenpo-captura.png'
 import Iphone from './assets/capturas/iphone-captura.png'
+import Imc from './assets/capturas/IMC-Calculator.png'
 
 const projets = [{
     id: 1,
@@ -21,25 +22,33 @@ const projets = [{
     desc: "Projeto pessoal de lista de afazeres feito em React e utilizando uma API que eu mesmo fiz para criar, vizualizar e apagar as tarefas."
 },
 {
-    id: 3,
+    id:3,
+    img: Imc,
+    Link:"https://imccaculator.netlify.app/",
+    title: "Calculadora de IMC",
+    desc: "Projeto pessoal de calculadora de IMC feito em React.Nele você vê a proporcionalidade da sua massa corporal e do seu peso. Pode ver se está com magreza, se está proporcional, com obesidade I, II OU III."
+},
+{
+    id: 4,
     img: Conversor,
     link: "https://eduardo-muricy.github.io/conversor-de-moedas/",
     title: "Conversor de moedas",
     desc: "Projeto pessoal de conversor de moedas feito em Javascript utilizando API para cotação em tempo real das moedas.  "
 },
 {
-    id: 4,
+    id: 5,
     img: Jokenpo,
     link: "https://jookeenpoo.netlify.app/",
     title: "Jokenpo",
     desc: "Game de Pedra, papel e tesoura criado em HTML, CSS e Javascript."
 },
 {
-    id: 5,
+    id: 6,
     img: Iphone,
     link: "https://eduardo-muricy.github.io/AppleStore/",
     title: "Iphone 14 page",
     desc: "Lading page inspirada na Apple. Criada em HTML, CSS e Javascript. O intuito dela foi dar os primeiros passos na manipulação do DOM."
+
 }
 ]
 function ProjetCard() {
