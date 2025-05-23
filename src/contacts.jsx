@@ -5,10 +5,10 @@ import { MicrosoftOutlookLogo } from '@phosphor-icons/react'
 
 function Contacts() {
     return (
-        <footer className="bg-[#121212] text-[#E0E0E0] md:px-10 border-t-1 border-[#D4AF37]">
+        <footer className="bg-[#121212] text-[#E0E0E0]  border-t-1 border-[#D4AF37]">
            
 
-            <div id='contact' className='flex flex-col md:justify-around  items-center md:flex-row py-3'>
+            <div id='contact' className='flex flex-col md:justify-around  items-center md:flex-row py-3 md:px-15 '>
 
                 <div>
                     <h1 className='text-4xl font-bold pb-1 md:text-5xl'>Eduardo Muricy</h1>
@@ -55,6 +55,9 @@ function Contacts() {
 
 
                 </div>
+            </div>
+            <div className='border-t-1  border-[#D4AF37]'>
+                <h4 className='text-center  py-2  font-semibold text-xl  '>Desenvolvido por Eduardo Muricy</h4>
             </div>
         </footer>
     )

@@ -6,6 +6,7 @@ import Conversor from './assets/capturas/conversor-de-moedas.png'
 import Jokenpo from './assets/capturas/jokenpo-captura.png'
 import Iphone from './assets/capturas/iphone-captura.png'
 import Imc from './assets/capturas/IMC-Calculator.png'
+import FormMultiStep from './assets/capturas/formulario-multi-step.png'
 
 const projets = [{
     id: 1,
@@ -17,33 +18,38 @@ const projets = [{
 {
     id: 2,
     img: Todo,
-    link: "https://toodo-liist.netlify.app/" , 
+    link: "https://toodo-liist.netlify.app/",
     title: "Todo list",
     desc: "Projeto pessoal de lista de afazeres feito em React e utilizando uma API que eu mesmo fiz para criar, vizualizar e apagar as tarefas."
+}, {
+    id: 3,
+    img: FormMultiStep,
+    title: "Formulario multi-step",
+    desc: "Projeto pessoal de simulação de um formulário multi etapas de pós compra, feito em React. Ele é dividido em 3 etapas: 1- Nome e email, 2- Avaliação do produto, 3- Agradecimento e resumo da avaliação "
 },
 {
-    id:3,
+    id: 4,
     img: Imc,
-    Link:"https://imccaculator.netlify.app/",
+    Link: "https://imccaculator.netlify.app/",
     title: "Calculadora de IMC",
     desc: "Projeto pessoal de calculadora de IMC feito em React.Nele você vê a proporcionalidade da sua massa corporal e do seu peso. Pode ver se está com magreza, se está proporcional, com obesidade I, II OU III."
 },
 {
-    id: 4,
+    id: 5,
     img: Conversor,
     link: "https://eduardo-muricy.github.io/conversor-de-moedas/",
     title: "Conversor de moedas",
     desc: "Projeto pessoal de conversor de moedas feito em Javascript utilizando API para cotação em tempo real das moedas.  "
 },
 {
-    id: 5,
+    id: 6,
     img: Jokenpo,
     link: "https://jookeenpoo.netlify.app/",
     title: "Jokenpo",
     desc: "Game de Pedra, papel e tesoura criado em HTML, CSS e Javascript."
 },
 {
-    id: 6,
+    id: 7,
     img: Iphone,
     link: "https://eduardo-muricy.github.io/AppleStore/",
     title: "Iphone 14 page",
@@ -54,18 +60,18 @@ const projets = [{
 function ProjetCard() {
     return (
         <div className="flex flex-col md:flex-row md:flex-wrap  ">
-            
+
 
             {projets.map((projeto, index) => (
-                <div id="projets" key={projeto.id}  className={`flex-[0_0_100%] flex-col px-3 py-3  min-w-0 md:flex-[0_0_calc(100%/4)]   ${index === 3 ? 'md:flex-basis-full' : ''
+                <div id="projets" key={projeto.id} className={`flex-[0_0_100%] flex-col px-3 py-3  min-w-0 md:flex-[0_0_calc(100%/4)]   ${index === 3 ? 'md:flex-basis-full' : ''
                     }}`}>
-                    <article data-aos="zoom-in"  className=" space-y-4 h-full flex flex-col  bg-[#2E2E2E] rounded-md border-1  border-[#D4AF37] ">
+                    <article data-aos="zoom-in" className=" space-y-4 h-full flex flex-col  bg-[#2E2E2E] rounded-md border-1  border-[#D4AF37] ">
                         <div className="flex-1 flex  justify-between  ">
-                            
-                                <img src={projeto.img} alt="" className=" rounded-t-md border-t-1   border-[#D4AF37] " />
+
+                            <img src={projeto.img} alt="" className=" rounded-t-md border-t-1   border-[#D4AF37] " />
 
 
-                            
+
 
 
                         </div>
@@ -83,10 +89,11 @@ function ProjetCard() {
 
                             <div className='flex border-t border-[#6C757D]  py-3 justify-center gap-8 md:gap-25 '>
 
-                                <a
+                                 <a
                                     target='_blank'
                                     href={projeto.link}
-                                    className='flex items-center justify-center border-1  border-[#D4AF37]  text-[#E0E0E0]  hover:border-[#121212] hover:bg-[#121212] px-3 py-2 rounded-md duration-300'
+                                   className="flex items-center justify-center text-[#E0E0E0]  text-lg duration-300 hover:text-[#D4AF37] relative
+    after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-[2px] after:bg-[#D4AF37] after:w-0 after:transition-all after:duration-300 hover:after:w-full"
                                 >
 
                                     Visitar projeto
@@ -119,3 +126,6 @@ function ProjetCard() {
 
 
 export default ProjetCard
+
+
+
